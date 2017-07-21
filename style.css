@@ -1,6 +1,14 @@
-﻿.navbar.navbar-inverse {
+﻿.navbar-inverse {
     margin: 0px;
     background-color: #474E5D;
+   background-image:none;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #FCF9F4;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FCF9F4;
 }
 
 div.row {
