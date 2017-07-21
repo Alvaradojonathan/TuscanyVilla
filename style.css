@@ -22,10 +22,11 @@ div.row {
     margin: 0px;
 }
 
-#location {
+#heading {
     background-color: #474E5D;
     color: #FCF9F4;
-    margin: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
     padding: 6px;
 }
 
@@ -37,6 +38,10 @@ div.row {
 .jumbotron p {
     font-size: 12px;
     text-align: center;
+}
+
+#locimage {
+    padding-top:16px;
 }
 
 
@@ -74,7 +79,12 @@ div.row {
 }
 
 .topBottomLoc {
-    background-color: #FCF9F4;
+    background-color: #FFFFFF;
     color: #474E5D;
     margin: 0px;
+}
+.thumbnail {
+    border: 0 none;
+    
+    box-shadow: none;
 }
