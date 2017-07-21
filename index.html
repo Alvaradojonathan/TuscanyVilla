@@ -2,7 +2,7 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,10 +15,10 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse ">
-        <div class="container">            
+        <div class="container">
             <a class="navbar-brand glyphicon glyphicon-header navTextColor" href="#"></a>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -27,7 +27,7 @@
             </div>
             <div>
                 <ul class="nav navbar-nav navbar-right navTextColor" id="hamburger">
-                    <li><a href="#">Locations</a></li>
+                    <li><a href="index.location">Locations</a></li>
                     <li><a href="#">Ammenities</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contact</a></li>
@@ -37,16 +37,56 @@
     </nav>
     <!--Navbar Section Ends-->
 
-    <div class="jumbotron">
-        <div class="container row">
-            <div class="col-md-8">
-                <img class="img-responsive"src="images/tuscany-villas-sant-anna.jpg" />
+    <div class="jumbotron jumboAlign">
+        <div class="row jumboAlign">
+            <div class="col-md-9 col-sm-10 jumboAlign">
+                <img class="img-responsive" src="images/tuscany-villas-sant-anna.jpg" />
             </div>
-            <div class="col-sm-4">
-                <img class="img-responsive"src="images/Versilia.jpg" />
+            <div class="col-md-3 col-sm-2 jumboAlign" id="map">
+                <img class="img-responsive" src="images/Versilia.jpg" />
             </div>
         </div>
     </div>
+    <!--Jumbotron section ends-->
+
+    <div class="jumbotron" id="location">
+        <h1>Locations</h1>
+        <p>Places to go</p>
+    </div>
+
+    <div class="jumbotron row topBottomLoc">
+        <div class="col-md-8 col-sm-6">
+            <h1 id="loc">Location 1</h1>
+            <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
+            <p><a href="#" role="button" id="grayButton">Reserve Now</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <p id="loactionPicRight col-md-4 col-sm-6"><img class="img-responsive " src="images/italy-mountain-villa.jpeg" /></p>
+        </div>
+    </div>
+
+    <div class="jumbotron row midLocation">
+        <div class="col-md-4 col-sm-6">
+            <p id="locationPicLeft"><img class="img-responsive" src="images/modern-villa.jpeg" /></p>
+        </div>
+        <div class="col-md-8 col-sm-6">
+            <h1 id="loc">Location 2</h1>
+            <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
+            <p><a href="#" role="button" id="whiteButton">Check It Out</a></p>
+        </div>
+    </div>
+
+    <div class="jumbotron row topBottomLoc">
+        <div class="col-md-8 col-sm-6">
+            <h1 id="loc">Location 3</h1>
+            <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
+            <p><a href="#" role="button" id="grayButton">Join Us</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <p id="locationPicRight"><img class="img-responsive" src="images/tuscany-grape-field-nature-51947.jpeg" /></p>
+        </div>
+    </div>
+
 
 </body>
 </html>

@@ -1,1 +1,72 @@
-﻿
+﻿.navbar.navbar-inverse {
+    margin: 0px;
+    background-color: #474E5D;
+}
+
+div.row {
+    padding: 0;
+    margin: 0;
+}
+
+
+.jumboAlign {
+    padding: 0px;
+    margin: 0px;
+}
+
+#location {
+    background-color: #474E5D;
+    color: #FCF9F4;
+    margin: 0px;
+    padding: 6px;
+}
+
+.jumbotron h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.jumbotron p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+#justify {
+    text-align: justify;
+}
+
+#grayButton {
+    background-color: #474E5D;
+    padding: 6px;
+    border: 1px;
+    border-color: #787D86;
+    color: #FCF9F4;
+    text-align: left;
+}
+
+#whiteButton {
+    background-color: #FCF9F4;
+    padding: 6px;
+    border: 1px;
+    border-color: #787D86;
+    color: #474E5D;
+    text-align: left;
+}
+
+#loc {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.midLocation {
+    background-color: #474E5D;
+    color: #FCF9F4;
+    margin: 0px;
+}
+
+.topBottomLoc {
+    background-color: #FCF9F4;
+    color: #474E5D;
+    margin: 0px;
+}
