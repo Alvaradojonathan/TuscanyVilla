@@ -8,16 +8,16 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-inverse ">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <a class="navbar-brand glyphicon glyphicon-header navTextColor" href="#"></a>
             <div class="navbar-header">
@@ -30,7 +30,7 @@
             </div>
             <div>
                 <ul class="nav navbar-nav navbar-right navTextColor" id="hamburger">
-                    <li><a href="index.location">Locations</a></li>
+                    <li><a href="#">Locations</a></li>
                     <li><a href="#">Ammenities</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contact</a></li>
@@ -39,159 +39,182 @@
         </div>
     </nav>
     <!--Navbar Section Ends-->
-
-    <div class="jumbotron jumboAlign">
-        <div class="row jumboAlign">
-            <div class="col-md-9 col-sm-10 jumboAlign">
-                <img class="img-responsive" src="images/tuscany-villas-sant-anna.jpg" />
-            </div>
-            <div class="col-md-3 col-sm-2 jumboAlign" id="map">
-                <img class="img-responsive" src="images/Versilia.jpg" />
-            </div>
-        </div>
-    </div>
-    <!--Jumbotron section ends-->
-
-    <div class="jumbotron" id="heading">
-        <h1>Locations</h1>
-        <p>Places to go</p>
-    </div>
-
-    <div class="jumbotron row topBottomLoc">
-        <div class="col-md-8 col-sm-6">
-            <h1 id="loc">Location 1</h1>
-            <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
-            <p><a href="#" role="button" id="grayButton">Reserve Now</a></p>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <p id="loactionPicRight col-md-4 col-sm-6"><img id="locimage" class="img-responsive " src="images/italy-mountain-villa.jpeg" /></p>
-        </div>
-    </div>
-
-    <div class="jumbotron row midLocation">
-        <div class="col-md-4 col-sm-6">
-            <p id="locationPicLeft"><img id="locimage"class="img-responsive" src="images/modern-villa.jpeg" /></p>
-        </div>
-        <div class="col-md-8 col-sm-6">
-            <h1 id="loc">Location 2</h1>
-            <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
-            <p><a href="#" role="button" id="whiteButton">Check It Out</a></p>
-        </div>
-    </div>
-
-    <div class="jumbotron row topBottomLoc">
-        <div class="col-md-8 col-sm-6">
-            <h1 id="loc">Location 3</h1>
-            <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
-            <p><a href="#" role="button" id="grayButton">Join Us</a></p>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <p id="locationPicRight"><img id="locimage" class="img-responsive" src="images/tuscany-grape-field-nature-51947.jpeg" /></p>
-        </div>
-    </div>
-    <!--Location section ends-->
-
-
-    <div class="jumbotron" id="heading">
-        <h1>Ammenitiess</h1>
-        <p>Some stuff for you to enjoy</p>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/3b-348x348.jpg" />
+    <div>
+        <div class="jumbotron jumboAlign">
+            <div class="row">
+                <div class="col-md-9" id="map">
+                    <img src="images/tuscany-villas-sant-anna.jpg" />
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="caption">
-                    <h3>A VILLA FOR EVERY OCCASION</h3>
-                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                    <p><a href="#" role="button" id="grayButton">check it out</a></p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/42-348x348.jpg" />
+                <div class="col-md-3" id="map">
+                    <p id="rightmap"><img class="img-responsive" src="images/Versilia.jpg" /></p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <div class="caption">
-                    <h3>WHAT SETS US APART</h3>
-                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                    <p><a href="#" role="button" id="grayButton">check it out</a></p>
+        <!--Jumbotron section ends-->
+
+        <div class="jumbotron" id="heading">
+            <h1 id="barhead">Locations</h1>
+            <p id="barsub">Places to go</p>
+        </div>
+
+        <div class="jumbotron row topBottomLoc">
+            <div class="col-md-8 col-sm-6">
+                <h1 id="loc">Location 1</h1>
+                <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
+                <p><a href="#" role="button" id="grayButton">Reserve Now</a></p>
+            </div>
+            <div class="col-md-4 col-sm-6 ">
+                <p id="loactionPicRight col-md-4 col-sm-6"><img id="locimage" class="img-responsive " src="images/italy-mountain-villa.jpeg" /></p>
+            </div>
+        </div>
+
+        <div class="jumbotron row midLocation">
+            <div class="col-md-4 col-sm-6">
+                <p id="locationPicLeft"><img id="locimage" class="img-responsive" src="images/modern-villa.jpeg" /></p>
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <h1 id="loc">Location 2</h1>
+                <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
+                <p><a href="#" role="button" id="whiteButton">Check It Out</a></p>
+            </div>
+        </div>
+
+        <div class="jumbotron row topBottomLoc">
+            <div class="col-md-8 col-sm-6">
+                <h1 id="loc">Location 3</h1>
+                <p id="justify">Fusce porta odio ut mi pretium laoreet. Vestibulum pretium augue sit amet urna venenatis, vel scelerisque metus finibus. Sed vel leo nisi. Donec vel interdum risus, a tincidunt risus. Vivamus nec dui bibendum, eleifend metus ultrices, porttitor turpis. In vestibulum euismod dolor. Sed sit amet commodo lorem, eu luctus neque. Nullam venenatis, est in egestas lobortis, lorem augue rhoncus odio, at imperdiet est ante ac nibh.</p>
+                <p><a href="#" role="button" id="grayButton">Join Us</a></p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p id="locationPicRight"><img id="locimage" class="img-responsive" src="images/tuscany-grape-field-nature-51947.jpeg" /></p>
+            </div>
+        </div>
+        <!--Location section ends-->
+
+
+        <div class="jumbotron" id="heading">
+            <h1 id="barhead">Ammenitiess</h1>
+            <p id="barsub">Some stuff for you to enjoy</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 collimg">
+                    <div class="thumbnail">
+                        <img src="images/3b-348x348.jpg" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 colltext">
+                    <div class="caption">
+                        <h3>A VILLA FOR EVERY OCCASION</h3>
+                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                        <p><a href="#" role="button" id="grayButton">check it out</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 collimg">
+                    <div class="thumbnail">
+                        <img src="images/42-348x348.jpg" />
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/314-348x348.jpg" />
+            <div class="row">
+                <div class="col-sm-12 col-md-4 colltext">
+                    <div class="caption">
+                        <h3>WHAT SETS US APART</h3>
+                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                        <p><a href="#" role="button" id="grayButton">check it out</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 collimg">
+                    <div class="thumbnail">
+                        <img src="images/314-348x348.jpg" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 colltext">
+                    <div class="caption">
+                        <h3>TALK TO STAFF</h3>
+                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                        <p><a href="#" role="button" id="grayButton">check it out</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="caption">
-                    <h3>TALK TO STAFF</h3>
-                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                    <p><a href="#" role="button" id="grayButton">check it out</a></p>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 collimgbot">
+                    <div class="thumbnail-">
+                        <img class="img-responsive" src="images/Villa-Rucellai-Toscani-2812-2-348x348.jpg" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 colltext">
+                    <div class="caption">
+                        <h3>BOOK YOUR VILLA</h3>
+                        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                        <p><a href="#" role="button" id="grayButton">check it out</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 collimgbot">
+                    <div class="thumbnail">
+                        <img src="images/Villa-Vanna-231-348x348.jpg" />
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail-">
-                    <img class="img-responsive"src="images/Villa-Rucellai-Toscani-2812-2-348x348.jpg" />
+        <!--Ammenities Section Ends-->
+
+
+        <div class="jumbotron" id="heading">
+            <h1 id="barhead">Reviews</h1>
+            <p id="barsub">What our customers are saying</p>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example headline.</h1>
+                            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="caption">
-                    <h3>BOOK YOUR VILLA</h3>
-                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                    <p><a href="#" role="button" id="grayButton">check it out</a></p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="images/Villa-Vanna-231-348x348.jpg" />
-                </div>
-            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
-    <!--Ammenities Section Ends-->
 
-
-    <div class="jumbotron" id="heading">
-        <h1>Reviews</h1>
-        <p>What our customers are saying</p>
-    </div>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <p>"It's incredible!"</p>
-            </div>
-            <div class="carousel-item">
-                <p>"It's incredible!"</p>
-            </div>
-            <div class="carousel-item">
-                <p>"It's incredible!"</p>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 
 
 </body>
