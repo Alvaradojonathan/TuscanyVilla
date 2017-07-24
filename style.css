@@ -116,3 +116,17 @@ div.thumbnail {
     padding-bottom:12px;
     margin:0px;
 }
+/*Review styling*/
+.padreview {
+    padding-bottom: 12px;
+}
+#mycarousel {
+    padding:0px;
+    margin:0px;
+}
+#headinglast {
+    margin:0px;
+    background-color: #474E5D;
+    color: #FCF9F4;
+    padding:6px
+}
