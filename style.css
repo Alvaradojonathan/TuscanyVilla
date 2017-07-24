@@ -130,3 +130,9 @@ div.thumbnail {
     color: #FCF9F4;
     padding:6px
 }
+a.glyphicon.glyphicon-chevron-up {
+    color: #FCF9F4;
+}
+#homefooter {
+    text-align:center;
+}
